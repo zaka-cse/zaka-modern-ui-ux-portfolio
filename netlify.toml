@@ -1,0 +1,9 @@
+# Netlify configuration for a static site (no build step)
+[build]
+  publish = "."
+
+# Long-cache the media/image assets (filenames are stable)
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
