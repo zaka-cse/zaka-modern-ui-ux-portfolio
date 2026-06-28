@@ -1992,7 +1992,7 @@
         @media (max-width: 600px) { #bgm-toggle { width: 42px; height: 42px; left: 16px; bottom: 16px; } }
     </style>
     <script>
-        // --- Background music with auto-ducking when ZAKA AI speaks ---
+        /*/ --- Background music with auto-ducking when ZAKA AI speaks ---
         (function () {
             const audio = document.getElementById('bgm');
             const btn = document.getElementById('bgm-toggle');
@@ -2029,7 +2029,7 @@
                 fadeTo(0, 300);
                 setTimeout(() => { try { audio.pause(); } catch (e) {} }, 320);
                 btn.classList.remove('playing'); btn.classList.add('muted');
-            }
+            } */
 
             // Public ducking API — called by ZAKA AI's speak() (text-to-speech)
             window.BGM = {
